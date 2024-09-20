@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Key-Value Input with Toggle Note and File Upload</title>
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="app.js"></script>
+  </head>
+
+  <body>
+    <div class="main-con">
+      <!-- <header>
+        <h1>Environment Variables</h1>
+        <p class="subtitle">
+          In order to provide your Deployment with Environment Variables at
+          Build and Runtime, you may enter them right here, for the Environment
+          of your choice.
+        </p>
+      </header> -->
+      <div class="input-container-wrap">
+        <div id="inputContainer" class="border first">
+          <div class="input-container fade-in">
+            <div class="input-wrap">
+              <input
+                type="text"
+                placeholder="e.g. CLIENT_KEY"
+                class="key-input"
+              />
+              <input type="text" placeholder="aBb123XyZ" class="value-input" />
+              <div class="action-btn-group">
+                <button class="note-btn icon-button">Add Note</button>
+                <button class="delete-btn icon-button">Delete</button>
+              </div>
+            </div>
+            <textarea
+              class="note-input"
+              placeholder="Enter your text here..."
+            ></textarea>
+          </div>
+        </div>
+      </div>
+      <div class="border btn-group">
+        <button id="addButton">Add Another</button>
+        <p class="snippet">or paste the .env contents above</p>
+        <!-- <button id="logButton" class="log-btn">Log Data</button> -->
+        <!-- <button id="uploadButton">Upload .env File</button> -->
+      </div>
+
+      <input type="file" id="fileInput" accept=".env" />
+      <div id="dropZone" class="drop-zone">
+        <div class="icon-title">
+          <div id="importIcon"></div>
+          <p class="import-title">Import Files</p>
+        </div>
+        <p class="import-snippet">
+          Drag and drop files here or click to upload
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
